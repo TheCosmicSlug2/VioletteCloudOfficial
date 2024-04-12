@@ -1,0 +1,167 @@
+body{
+	background-color: #ff66ff;
+    color: #42117B;
+    font-family: "Candara", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 20px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+    background: #42117B; /* Couleur de fond de la piste de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff66ff; /* Couleur du bouton de la barre de défilement */
+}
+
+
+.grande_banniere {
+    text-align: center;
+    font-weight: bold;
+}
+
+.logo_icones {
+    position: relative;
+}
+
+.lieu {
+    width: 100 px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.label_contact {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 120px;
+}
+
+
+
+.image_instagram {
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    transition: transform .2s;
+}
+
+.image_instagram:hover {
+    transform: scale(1.2);
+}
+
+.image_youtube {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    transition: transform .2s;
+}
+
+.image_youtube:hover {
+    transform: scale(1.2);
+}
+
+.image_facebook {
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transition: transform .2s;
+}
+
+.image_facebook:hover {
+    transform: scale(1.2);
+}
+
+
+.image_banniere {
+    display: block;
+    width: 100%; /* Image occupant toute la largeur de la section banniere */
+    height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
+}
+
+.titre {
+    text-align: center;
+}
+
+.corps {
+    width: 50%; /* ou toute autre largeur souhaitée */
+    margin: auto;
+}
+
+.separator {
+    border: 0; /* Supprimer le bord par défaut de la règle */
+    height: 2px; /* Hauteur de la ligne horizontale */
+    background-color: #42117B; /* Couleur de la ligne horizontale */
+    margin: 20px 0; /* Marge supérieure et inférieure pour l'espace entre les sections */
+}
+
+
+
+.grille {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+.grille_objet {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Styles spécifiques pour chaque élément */
+.haut_gauche {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.haut_droit {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bas_gauche {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.bas_droit {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.image_liste_membres{
+	width: 200px;
+    padding: 10px;
+}
+
+.en_concert {
+    display: flex;
+    align-items: center; /* Alignement vertical */
+}
+
+.en_concert ul {
+    margin-right: 20px; /* Espacement entre la liste et l'image */
+}
+
+.en_concert img {
+    width: 100px;
+}
+
+.lire_photo {
+    background-color: transparent;
+    border: 0px;
+    transition: transform 0.3s;
+}
+
+.lire_photo:hover {
+    transform: scale(1.5); /* Augmente la taille du bouton au survol */
+}
