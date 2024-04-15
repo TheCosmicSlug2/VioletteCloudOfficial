@@ -22,3 +22,19 @@ function kinepolis() {
 function rue() {
     document.getElementById("image_concerts").src = "https://lh3.googleusercontent.com/pw/AP1GczMMDnf-5LyRZVSogtCL2C2bLpGJEoklg6yqLwSOJR0OWhsL5ZA7nyJAKmgnA-xJTERVJiRgRgSpZSbprpsG8-WiKtPPwAPp_i2ctXEE7ExcZss2zRE1k99O5q0QCfmWdgMk4783N47Vt8moxoDpFjX5";
 }
+
+function infos() {
+    var demos = document.getElementById('demos');
+    demos.style.display = 'none';
+    var infos = document.getElementById('infos');
+    infos.style.display = 'block';
+
+}
+
+function demos() {
+    var demos = document.getElementById('demos');
+    demos.style.display = 'block';
+    var infos = document.getElementById('infos');
+    infos.style.display = 'none';
+
+}
