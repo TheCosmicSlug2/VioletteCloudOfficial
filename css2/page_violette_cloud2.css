@@ -2,7 +2,19 @@ body{
 	background-color: #ff66ff;
     color: #42117B;
     font-family: "Candara", sans-serif;
+    text-align: center;
 }
+
+header {    
+    font-weight: bold;
+}
+
+main {
+    width: 80%; /* ou toute autre largeur souhaitée */
+    margin: auto;
+}
+
+
 
 ::-webkit-scrollbar {
     width: 20px; /* Largeur de la barre de défilement */
@@ -16,11 +28,6 @@ body{
     background: #ff66ff; /* Couleur du bouton de la barre de défilement */
 }
 
-
-.grande_banniere {
-    text-align: center;
-    font-weight: bold;
-}
 
 .logo_icones {
     position: relative;
@@ -39,8 +46,6 @@ body{
     top: 20px;
     right: 120px;
 }
-
-
 
 .image_instagram {
     width: 30px;
@@ -85,14 +90,23 @@ body{
     height: auto; /* Hauteur automatique pour maintenir les proportions de l'image */
 }
 
-.titre {
-    text-align: center;
+.bouton_sections {
+    margin-top: 20px;
+    font-weight: bold;
+    background-color:transparent;
+    border-bottom: none;
+    border: 2px solid #42117B;
+    color: #42117B;
+    transition: all 0.2s; /* Ajoute une transition fluide */
+    font-size: 16px; /* Taille initiale du texte */
+    padding: 10px 40px; /* Rembourrage initial du bouton */
 }
 
-.corps {
-    width: 50%; /* ou toute autre largeur souhaitée */
-    margin: auto;
+.bouton_sections:active,
+.bouton_sections:focus {
+    transform: scale(1.1); /* Augmente l'échelle du bouton */
 }
+
 
 .separator {
     border: 0; /* Supprimer le bord par défaut de la règle */
@@ -101,6 +115,9 @@ body{
     margin: 20px 0; /* Marge supérieure et inférieure pour l'espace entre les sections */
 }
 
+.aligner_liste_gauche {
+    text-align: left;
+}
 
 
 .grille {
@@ -117,10 +134,15 @@ body{
     flex-direction: row;
 }
 
+.legende_gauche {
+    width: 100px;
+}
+
 /* Styles spécifiques pour chaque élément */
 .haut_gauche {
     grid-column: 1;
     grid-row: 1;
+    justify-content: right;
 }
 
 .haut_droit {
@@ -131,6 +153,7 @@ body{
 .bas_gauche {
     grid-column: 1;
     grid-row: 2;
+    justify-content: right;
 }
 
 .bas_droit {
@@ -140,6 +163,7 @@ body{
 
 .image_liste_membres{
 	width: 200px;
+    height: 300px;
     padding: 10px;
 }
 
@@ -153,15 +177,15 @@ body{
 }
 
 .en_concert img {
-    width: 100px;
+    height: 200px;
 }
 
-.lire_photo {
+.bouton_lire_photo {
     background-color: transparent;
     border: 0px;
     transition: transform 0.3s;
 }
 
-.lire_photo:hover {
-    transform: scale(1.5); /* Augmente la taille du bouton au survol */
+.bouton_lire_photo:hover {
+    transform: scale(1.5); /* Augmente la taille de la flèche au survol */
 }
